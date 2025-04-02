@@ -286,6 +286,7 @@ return new class extends Migration
             $table->string('unit', 10);
             $table->integer('brand_id')->nullable();
             $table->integer('category_id')->nullable();
+            $table->integer('hsn_code')->nullable();
             $table->string('product_type', 50)->nullable()->default('simple');
             $table->decimal('discount', 10)->default(0);
             $table->decimal('quantity', 10)->default(0);
